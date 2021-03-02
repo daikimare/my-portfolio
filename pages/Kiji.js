@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Kiji() {
   return(
@@ -24,6 +25,9 @@ export default function Kiji() {
           </tbody>
         </table>
       </body>
+      <footer>
+        <h3><Link href="/">Home</Link></h3>
+      </footer>
     </div>
   )
 }

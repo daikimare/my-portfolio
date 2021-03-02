@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 // import Image from 'next/image';
 
 export default function Product() {
@@ -12,6 +13,9 @@ export default function Product() {
       <body>
         <h1>成果物</h1>
       </body>
+      <footer>
+        <h3><Link href="/">Home</Link></h3>
+      </footer>
     </div>
   )
 }
