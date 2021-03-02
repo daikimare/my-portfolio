@@ -8,12 +8,9 @@ import Link from 'next/link';
 // component
 import Sns from './components/SNS';
 
-// stylesheet
-import styles from '../styles/Home.module.css';
-
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>HOME/maresuke blog</title>
         <link rel="icon" href="/favicon.ico"/>
