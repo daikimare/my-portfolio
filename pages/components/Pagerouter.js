@@ -36,7 +36,7 @@ export default function Pagerouter() {
   ]
   return (
     <div>
-      <ul className=" md:flex md:justify-end ">
+      <ul className=" md:flex md:justify-end text-center ">
         {navbarItem.map((val) => {
           return (
             <li key={val.id} className=" border-b md:border-none block px-8 py-2 hover:bg-gray-600 rounded ">
