@@ -10,27 +10,27 @@ export default function Pagerouter() {
     },
     {
       id: 2,
-      route: "/components/contents/Introduction",
+      route: "/contents/Introduction",
       name: "Introduction"
     },
     {
       id: 3,
-      route: "/components/contents/Product",
+      route: "/contents/Product",
       name: "Product"
     },
     {
       id: 4,
-      route: "/components/contents/Article",
+      route: "/contents/Article",
       name: "Article"
     },
     {
       id: 5,
-      route: "/components/contents/History",
+      route: "/contents/History",
       name: "History"
     },
     {
       id: 6,
-      route: "/components/contents/Contact",
+      route: "/contents/Contact",
       name: "Contact"
     }
   ]
@@ -44,7 +44,8 @@ export default function Pagerouter() {
                 name={val.name}
                 value={val.route}
                 component={Link}
-                href={val.route} >
+                href={val.route}
+                >
                 {val.name}
               </Link>
             </li>
