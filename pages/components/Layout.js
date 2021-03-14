@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 // component
 import Footer from './Footer';
-import Navbar from './Navbar';
+import Hanburger from './Hanburger';
 
 export default function Layout() {
   return (
@@ -16,10 +16,18 @@ export default function Layout() {
       </Head>
 
       {/* header */}
-      <Navbar />
+      <Hanburger />
 
-      <main>
-
+      <main className=" container m-auto text-center p4 ">
+        {/* MAIN CONTENTS */}
+        <div className=" flex flex-wrap ">
+          <article className=" w-full lg:w-1/2 ">
+            hear is left caram but single screen when mobile screen
+          </article>
+          <article className=" w-full lg:w-1/2 ">
+            hear is right caram but single screen when mobile screen
+          </article>
+        </div>
       </main>
 
       {/* footer */}
