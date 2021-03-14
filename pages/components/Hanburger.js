@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+import React,{ Component, useState } from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
 
 import Pagerouter from './Pagerouter';
@@ -50,7 +50,7 @@ export default class Hanburger extends Component {
                   aria-haspopup="true"
                   aria-expanded={this.state.isOpen}
                 >
-                  <Hamburger rounded />
+                  <Hambtn />
                 </button>
               </nav>
             </div>
@@ -67,4 +67,27 @@ export default class Hanburger extends Component {
       </div>
     )
   }
+}
+
+const Hambtn = () => {
+  
+  const [isOpen, setOpen] = useState(false)
+
+  return(
+    <div>
+      <Hamburger
+        toggled={isOpen}
+        toggle={setOpen}
+        onToggle={toggled => {
+          if(toggled) {
+            // open
+            setOpen(true)
+          } else {
+            //close
+            setOpen(false)
+          }
+        }}
+        rounded />
+    </div>
+  )
 }
