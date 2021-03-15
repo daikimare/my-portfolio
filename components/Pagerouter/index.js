@@ -51,6 +51,7 @@ export default function Pagerouter() {
                 value={val.route}
                 component={Link}
                 href={val.route}
+                title={val.title}
                 >
                 {val.name}
               </Link>
