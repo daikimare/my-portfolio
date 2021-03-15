@@ -6,32 +6,38 @@ export default function Pagerouter() {
     {
       id: 1,
       route: "/",
-      name: "HOME"
+      name: "HOME",
+      title: "HOME"
     },
     {
       id: 2,
-      route: "/contents/Introduction",
-      name: "Introduction"
+      route: "/Introduction",
+      name: "Introduction",
+      title: "Introduction"
     },
     {
       id: 3,
-      route: "/contents/Product",
-      name: "Product"
+      route: "/Product",
+      name: "Product",
+      title: "Product"
     },
     {
       id: 4,
-      route: "/contents/Article",
-      name: "Article"
+      route: "/Article",
+      name: "Article",
+      title: "Article"
     },
     {
       id: 5,
-      route: "/contents/History",
-      name: "History"
+      route: "/History",
+      name: "History",
+      title: "History"
     },
     {
       id: 6,
-      route: "/contents/Contact",
-      name: "Contact"
+      route: "/Contact",
+      name: "Contact",
+      title: "Contact"
     }
   ]
   return (
