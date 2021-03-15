@@ -1,27 +1,18 @@
 // module
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
-
-import Hanburger from '../components/Hanburger';
 
 export default function Introduction() {
   return(
     <div>
-
-      <Head>
-        <title>ittroduction</title>
-        <link rel="icon" href="/favicon.ico"/>
-      </Head>
     
-      <Hanburger />
-
       <h1>About maresuke</h1>
       <h2>My status</h2>
       <div className="my-status">
         <p>name:</p><p>maresuke</p>
         <p>age:</p><p>21</p>
         <p>live:</p><p>Ishikawa</p>
+        <p>born:</p><p>Shimane</p>
       </div>
       <div className="skill-status">
         <div className="web-front">

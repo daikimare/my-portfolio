@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
 
 // component
-import Pagerouter from './Pagerouter';
+import Pagerouter from '../Pagerouter';
 
 export default function Navbar() {
 
@@ -45,14 +45,13 @@ export default function Navbar() {
         </div>
       </header>
 
+      {/* mobile screen */}
       { isToggle && (
         <Pagerouter />
       )}
-
+      {/* PC and tablet screen */}
       <div className=" hidden md:flex ">
-        <Pagerouter
-          
-        />
+        <Pagerouter />
       </div>
 
     </div> 
