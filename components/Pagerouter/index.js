@@ -6,8 +6,7 @@ export default function Pagerouter() {
     {
       id: 1,
       route: "/",
-      name: "HOME",
-      title: "HOME"
+      name: "Home"
     },
     {
       id: 2,
@@ -34,7 +33,13 @@ export default function Pagerouter() {
       title: "History"
     },
     {
-      id: 6,
+      id:6,
+      route: "/Blog",
+      name: "Blog",
+      title: "Blog"
+    },
+    {
+      id: 7,
       route: "/Contact",
       name: "Contact",
       title: "Contact"
