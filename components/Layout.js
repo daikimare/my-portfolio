@@ -16,7 +16,7 @@ export default function Layout(props) {
       {/* head */}
       <Head>
         <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/unicorn_1f984.png" />
       </Head>
 
       {/* header */}
