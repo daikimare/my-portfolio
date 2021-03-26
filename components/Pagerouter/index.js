@@ -22,9 +22,9 @@ export default function Pagerouter() {
     },
     {
       id: 4,
-      route: "/Article",
-      name: "Article",
-      title: "Article"
+      route: "/TechBlog",
+      name: "TechBlog",
+      title: "TechBlog"
     },
     {
       id: 5,
