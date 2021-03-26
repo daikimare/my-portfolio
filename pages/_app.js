@@ -4,14 +4,12 @@ import "tailwindcss/tailwind.css"
 import '../styles/globals.css'
 
 // component
-import Layout from '../components/Layout';
+// import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
 
   return(
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Component {...pageProps} />
   )
 }
 
