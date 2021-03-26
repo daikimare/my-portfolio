@@ -5,7 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default function Footer() {
   return(
-    <footer>
+    <footer className=" relative ">
       <div className=" flex justify-center py-4 bg-gray-400 text-green-300 ">
         <h4>&copy; 2021 maresuke(Daiki Fukushima)</h4>
         <ul className=" flex ">
