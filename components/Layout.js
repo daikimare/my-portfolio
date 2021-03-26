@@ -15,7 +15,7 @@ export default function Layout(props) {
     <div className="page">
       {/* head */}
       <Head>
-        <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
+        <title>{siteTitle} | {props.pageTitle}</title>
         <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/unicorn_1f984.png" />
       </Head>
 
