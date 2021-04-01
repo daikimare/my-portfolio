@@ -28,22 +28,19 @@ export default function Navbar() {
   }
 
   return(
-    <div className=" md:flex md:justify-between md:py-4 bg-gray-400 text-green-300 ">
-      <header>
-        <div ref={menuRef} className=" flex justify-between items-center px-4 ">
-          <h1 className=" text-4xl font-semibold md:text-3xl ">maresuke</h1>
-          <div className=" md:hidden ">
-            <button
-              onClick={clickEventOpen}
-              className=" ease-in-out "
-              aria-haspopup="true"
-              aria-expanded={isToggle}
-            >
-              <Hamburger />
-            </button>
-          </div>
+    <header className=" fixed z-30 w-full md:flex md:justify-between md:py-4 bg-gray-400 text-green-300 ">
+      <div ref={menuRef} className=" flex justify-between items-center px-4 md:flex md:justify-between ">
+        <h1 className=" text-4xl font-semibold md:text-3xl ">maresuke</h1>
+        <div className=" md:hidden ">
+          <button
+            onClick={clickEventOpen}
+            aria-haspopup="true"
+            aria-expanded={isToggle}
+          >
+            <Hamburger />
+          </button>
         </div>
-      </header>
+      </div>
 
       {/* mobile screen */}
       { isToggle && (
@@ -54,6 +51,6 @@ export default function Navbar() {
         <Pagerouter />
       </div>
 
-    </div> 
+    </header>
   )
 }

@@ -15,16 +15,15 @@ export default function Layout(props) {
     <div className="page">
       {/* head */}
       <Head>
-        <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle} | {props.pageTitle}</title>
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/unicorn_1f984.png" />
       </Head>
 
       {/* header */}
-      <Header />
-
+      <Header />  
 
       {/* main contents */}
-      <main>
+      <main className=" z-10 ">
         {title ? <h1 className="page-title">{title}</h1>:``}
         <div className="page-main">
           {children}
@@ -33,7 +32,7 @@ export default function Layout(props) {
 
       {/* footer */}
       <Footer />
-
+    
     </div>
   )
 }
