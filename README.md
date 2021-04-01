@@ -12,7 +12,7 @@ It is also my blog and contactform.
   - tailwind CSS
   - materialUI icon
 - ServerSide
-  - Go...?
+  - ?
 - Formater
   - ESLint
 
@@ -20,12 +20,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+- install some packages
 ```bash
 npm install
 # or
 yarn
 ```
 
+- start the project
 ```bash
 npm run dev
 # or
