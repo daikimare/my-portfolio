@@ -12,7 +12,7 @@ It is also my blog and contactform.
   - tailwind CSS
   - materialUI icon
 - ServerSide
-  - ?
+  - Node.js(default)
 - Formater
   - ESLint
 
