@@ -2,11 +2,12 @@
 import React from 'react';
 
 // component
+import Layout from '../components/Layout'
 
 export default function Contact() {
   return(
-    <div>
+    <Layout>
       <h1>this is contact page</h1>
-    </div>
+    </Layout>
   )
 }
