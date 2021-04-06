@@ -1,10 +1,12 @@
 // module
-import React from 'react';
+
+// component
+import Layout from '../components/Layout'
 
 export default function History() {
   return (
-    <div>
+    <Layout>
       <h1>this is History page</h1>
-    </div>
+    </Layout>
   )
 }
