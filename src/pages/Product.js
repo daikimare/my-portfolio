@@ -1,15 +1,15 @@
 // module
-import React from 'react';
 import Link from 'next/link';
+
+// component
+import Layout from '../components/Layout'
 
 export default function Product() {
 
   return(
-    <div>
-      <main id="page-wrap">
-        <h1>成果物</h1>
-        <h3><Link href="/">Home</Link></h3>
-      </main>
-    </div>
+    <Layout>
+      <h1>成果物</h1>
+      <h3><Link href="/">Home</Link></h3>
+    </Layout>
   )
 }
