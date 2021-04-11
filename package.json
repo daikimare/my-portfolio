@@ -22,9 +22,9 @@
     "eslint-plugin-tailwind": "^0.2.1",
     "gray-matter": "^4.0.2",
     "postcss": "^8.2.6",
-    "raw-loader": "^4.0.2",
-    "react-markdown": "^5.0.3",
     "react-swipeable-views": "^0.13.9",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
     "tailwindcss": "^2.0.4"
   }
 }
