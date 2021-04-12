@@ -1,8 +1,6 @@
 ---
 title: 'hello'
-author: 'maresuke'
-date: '2020-3-26'
-excerpt: 'hellow every one!'
+published: '2020-3-26'
 ---
 
 # Hello every one!

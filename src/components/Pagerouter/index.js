@@ -5,41 +5,36 @@ export default function Pagerouter() {
   const navbarItem = [
     {
       id: 1,
-      route: "/",
-      name: "Home"
-    },
-    {
-      id: 2,
       route: "/Introduction",
       name: "Introduction",
       title: "Introduction"
     },
     {
-      id: 3,
+      id: 2,
       route: "/Product",
       name: "Product",
       title: "Product"
     },
     {
-      id: 4,
+      id: 3,
       route: "/TechBlog",
       name: "TechBlog",
       title: "TechBlog"
     },
     {
-      id: 5,
+      id: 4,
       route: "/History",
       name: "History",
       title: "History"
     },
     {
-      id:6,
+      id:5,
       route: "/Blog",
       name: "Blog",
       title: "Blog"
     },
     {
-      id: 7,
+      id: 6,
       route: "/Contact",
       name: "Contact",
       title: "Contact"
