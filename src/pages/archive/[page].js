@@ -3,7 +3,7 @@ import fs from "fs"
 import Link from "next/link"
 
 import Pager from "../../components/Pager"
-import { listContentFiles, readContentFiles } from "../../lib/content-loader"
+import { listContentsFiles, readContentsFiles } from "../../lib/content-loader"
 
 const COUNT_PER_PAGE = 10
 
@@ -35,7 +35,7 @@ export async function getStaticProps({ params }) {
   const page = parseInt(params.page, 10)
   const end = COUNT_PER_PAGE * page
   const start = end - COUNT_PER_PAGE
-  const posts = await readContentFiles({ fs })
+  const posts = await readContentsFiles({ fs })
 
   return {
     props: {
@@ -51,7 +51,7 @@ export async function getStaticProps({ params }) {
  * 有効な URL パラメータを全件返す
  */
 export async function getStaticPaths() {
-  const posts = await listContentFiles({ fs })
+  const posts = await listContentsFiles({ fs })
   const pages = range(Math.ceil(posts.length / COUNT_PER_PAGE))
   const paths = pages.map((page) => ({
     params: { page: `${page}` }
