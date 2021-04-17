@@ -1,7 +1,8 @@
+// module
 import fs from "fs"
-
 import Link from "next/link"
 
+// component
 import Pager from "../../components/Pager"
 import { listContentsFiles, readContentsFiles } from "../../lib/content-loader"
 
