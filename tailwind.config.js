@@ -1,36 +1,15 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './app/**/*.{js,jsx,ts,tsx}',
+    './pages/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
-    fontFamily: {
-      'sans':[
-        'Roboto',
-        'Helvetica',
-        'Arial',
-        'sans-serif',
-        'Futura',
-        'Holland'
-      ]
-    },
-    extend: {
-      backgroundImage: theme => ({
-        'shinjiko': "url('/public/bacground/shinjiko-img.jpg')",
-      }),
-      backgroundOpacity: {
-        '10': '0.1',
-        '20': '0.2',
-        '95': '0.95',
-      }
-    },
-    variants: {
-      backgroundOpacity:[
-        'responsive',
-        'hover',
-        'focus',
-        'active'
-      ],
-      extend: {},
-    },
-    plugins: [],
-  }
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
+  ],
 }
