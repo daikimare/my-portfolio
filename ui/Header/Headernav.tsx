@@ -1,6 +1,13 @@
 'use client'
 import Link from 'next/link'
-import { FC, MutableRefObject, RefObject, useEffect, useRef, useState } from 'react'
+import {
+  FC,
+  MutableRefObject,
+  RefObject,
+  useEffect,
+  useRef,
+  useState,
+} from 'react'
 import MobileMenu from './MobileMenu'
 
 export type NavProps = {
@@ -69,7 +76,7 @@ export const Nav: FC<{ headerColumns: NavProps[] }> = ({ headerColumns }) => {
   const [open, setOpen] = useState(false)
   const mobileMenuRef = useRef<HTMLDivElement>(null)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const clickHandlerRef: MutableRefObject<any | null>= useRef(null)
+  const clickHandlerRef: MutableRefObject<any | null> = useRef(null)
 
   const openMenu = () => {
     if (open == true) return
