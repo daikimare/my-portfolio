@@ -9,7 +9,7 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     domains: ['www.pexels.com'],
   },
-  distDir: 'dist',
+  distDir: '.next',
   eslint: {
     dirs: ['app', 'components', 'hooks', 'lib'],
   },
